@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Resto Service</title>
+</head>
+
+<body>
+    <nav>
+        <h2>Resto Service</h2>
+    </nav>
+
+    <div id="banner"></div>
+    <div class="queArmar">
+        <div class="comida">
+            <button id="hamburguesa"><img src="/img/QueArmar/hamburguesa.png" alt=""></button>
+        </div>
+        <div class="comida">
+
+            <img src="./img/QueArmar/pizza.png" alt="">
+        </div>
+        <div class="comida">
+            <img src="./img/QueArmar/sandwich.png" alt="">
+        </div>
+        <div class="comida">
+            <img src="./img/QueArmar/cake.png" alt="">
+        </div>
+    </div>
+    <div id="banner"></div>
+
+    <div id="pedir" class="pedir">
+        <button class="pedirComida" data-precio="150" id="hamburguesa" data-producto="Hamburguesa"> Hamburguesa
+            <br>
+            <br>
+            <img src="./img/hamburguesa.png" alt="">
+        </button>
+        <button class="pedirComida" data-precio="200" id="sanguche" data-producto="Sandwich"> Sanguche
+            <br>
+            <br>
+            <img src="./img/sandwich.png" alt="">
+        </button>
+        <button class="pedirComida" data-precio="300" id="empanadas" data-producto="Empanadas"> Empanadas <br>
+            <br>
+            <img src="./img/empanada.png" alt="">
+        </button>
+        <button class="pedirComida" data-precio="500" id="pizza" data-producto="Pizza muzzarella"> Pizza de Muzzarella
+            <br>
+            <br>
+            <img src="./img/pizza.png" alt="">
+        </button>
+        <button class="pedirComida" data-precio="200" id="asado" data-producto="Asado"> Asado
+            <br>
+            <br>
+            <img src="./img/carne.png" alt="">
+        </button>
+        <button class="pedirComida" data-precio="180" id="postreoreo" data-producto="Postre Oreo"> Postre Oreo
+            <br>
+            <br>
+            <img src="./img/oreo.png" alt="">
+        </button>
+        <button class="pedirComida" data-precio="210" id="postrefrutillas" data-producto="Postre Frutilla"> Postre
+            Frutillas
+            <br>
+            <br>
+            <img src="./img/frutilla.png" alt="">
+        </button>
+        <button class="pedirComida" data-precio="240" id="lemonpie" data-producto="Postre Lemon Pie"> Postre Lemon Pie
+            <br>
+            <br>
+            <img src="./img/lemonpie.png" alt="">
+        </button>
+        <!--  <button class="pedirComida" data-precio="400" id="papasfritas"> Papas Fritas
+            <br>
+            <br>
+            <img src="./img/papas-fritas.png" alt="">
+        </button> -->
+
+    </div>
+    <div id="reseteo">
+        <button>
+            <img src="./img/borrar.png" alt="">
+            <br>
+            <br>
+            Borrar todo
+        </button>
+    </div>
+    <h4>Pedido realizado...</h4>
+    <div id="pedido"></div>
+    <button id="confirmar" class="confirmar">
+        
+         <img src="./img/success.png" alt="">
+         <br>
+         <br>
+         Confirmar 
+        </button>
+
+
+
+
+
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>
