@@ -1,8 +1,5 @@
 import { hamburguesa } from "./ingredientes.js"
 
-hamburguesa.ingredientes.forEach(ingrediente => {
-    console.log(ingrediente)
-})
 
 export function Hamburguesa() {
     return `

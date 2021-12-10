@@ -1,46 +1,49 @@
-export function Hamburguesa() {
-    
+import { pizza } from "./ingredientes.js"
+
+
+export function Pizza() {
     return `
     
-    <button class="pedirComida" data-precio="15"  data-producto="Queso"> Queso Cheddar
+    <button class="pedirComida" data-precio="${pizza.precios[0]}"  data-producto="${pizza.ingredientes[0]}">
+    ${pizza.ingredientes[0]}
     <br>
     <br>
-    <img class="img-hamburgesa" src="./img/QueArmar/hamburguesa/cheddar.png" alt="">
+    <img class="img-hamburgesa" src="./img/QueArmar/pizza/${pizza.ingredientes[0]}.png" alt="">
     </button>
-    <button class="pedirComida" data-precio="20"  data-producto="Carne"> Carne
+    <button class="pedirComida" data-precio="${pizza.precios[1]}"  data-producto="${pizza.ingredientes[1]}"> ${pizza.ingredientes[1]}
     <br>
     <br>
-    <img class="img-hamburgesa" src="./img/QueArmar/hamburguesa/carne.png" alt="">
+    <img class="img-hamburgesa" src="./img/QueArmar/pizza/${pizza.ingredientes[1]}.png" alt="">
 </button>
-<button class="pedirComida" data-precio="30"  data-producto="Huevo"> Huevo
+<button class="pedirComida" data-precio="${pizza.precios[2]}"  data-producto="${pizza.ingredientes[2]}"> ${pizza.ingredientes[2]}
 <br>
 <br>
-    <img class="img-hamburgesa" src="./img/QueArmar/hamburguesa/huevo.png" alt="">
+    <img class="img-hamburgesa" src="./img/QueArmar/pizza/${pizza.ingredientes[2]}.png" alt="">
 </button>
-<button class="pedirComida" data-precio="50"  data-producto="Lechuga"> Lechuga
+<button class="pedirComida" data-precio="${pizza.precios[3]}"  data-producto="${pizza.ingredientes[3]}"> ${pizza.ingredientes[3]}
     <br>
     <br>
-    <img class="img-hamburgesa" src="./img/QueArmar/hamburguesa/lechuga.png" alt="">
+    <img class="img-hamburgesa" src="./img/QueArmar/pizza/${pizza.ingredientes[3]}.png" alt="">
 </button>
-<button class="pedirComida" data-precio="20"  data-producto="Tomate"> Tomate
+<button class="pedirComida" data-precio="${pizza.precios[4]}"  data-producto="${pizza.ingredientes[4]}"> ${pizza.ingredientes[4]}
     <br>
     <br> 
-    <img class="img-hamburgesa"src="./img/QueArmar/hamburguesa/tomate.png" alt="">
+    <img class="img-hamburgesa"src="./img/QueArmar/pizza/${pizza.ingredientes[4]}.png" alt="">
 </button>
-<button class="pedirComida" data-precio="40"  data-producto="Cebolla"> Cebolla Caramelizada 
+<button class="pedirComida" data-precio="${pizza.precios[5]}"  data-producto="${pizza.ingredientes[5]}"> ${pizza.ingredientes[5]} 
     <br>
     <br>
-    <img class="img-hamburgesa" src="./img/QueArmar/hamburguesa/cebolla.png"" alt="">
+    <img class="img-hamburgesa" src="./img/QueArmar/pizza/${pizza.ingredientes[5]}.png"" alt="">
 </button>
-<button class="pedirComida" data-precio="20"  data-producto="Pepinillos"> Pepinillos
+<button class="pedirComida" data-precio="${pizza.precios[6]}"  data-producto="${pizza.ingredientes[6]}"> ${pizza.ingredientes[6]}
     <br>
     <br>
-    <img class="img-hamburgesa" src="./img/QueArmar/hamburguesa/pickle.png" alt="">
+    <img class="img-hamburgesa" src="./img/QueArmar/pizza/${pizza.ingredientes[6]}.png" alt="">
 </button>
-<button class="pedirComida" data-precio="30"  data-producto="Barbacoa"> Barbacoa
+<button class="pedirComida" data-precio="${pizza.precios[7]}"  data-producto="${pizza.ingredientes[7]}"> ${pizza.ingredientes[7]}
     <br>
     <br>
-    <img class="img-hamburgesa" src="./img/QueArmar/hamburguesa/barbacoa.png" alt="">
+    <img class="img-hamburgesa" src="./img/QueArmar/pizza/${pizza.ingredientes[7]}.png" alt="">
 </button>
     
     `

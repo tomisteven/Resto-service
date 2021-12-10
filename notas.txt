@@ -1,0 +1,1 @@
+dentro de pedidos generales, hacer un selector de que tipo de pedido se quiere pedir, cuando se selecciones uno se imprime las categorias a elegir, ejemplo: postres se va a motrar todos los postres. si elegis categoria bebidas se va a mostrar todas las bebidas.

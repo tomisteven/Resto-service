@@ -125,6 +125,7 @@ h4{
     font-weight: bold;
     margin-top: 12px;
     padding: 5px 10px;
+    cursor: url(../img/borrar1.png), auto;
     width: 100%;
 }
 
@@ -136,7 +137,7 @@ button{
     border: none;
 
 }
-#banner h2{
+#banner{
     
         color: rgb(0, 0, 0);
         font-size: 20px;
@@ -170,3 +171,191 @@ button{
     width: 100%;
     cursor: pointer;
 }
+
+/* responsive */
+
+@media screen and (max-width: 600px){
+    .pedir{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 50px;
+        grid-row-gap: 30px;
+        }
+    .pedirComida{
+        background-color: #f2f2f2;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        color: #2f2f2f;
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 12px;
+        padding: 12px 20px;
+        width: 100%;
+        cursor: pointer;
+    }
+    .confirmar{
+        background-color: #00ff2abd;
+        border: 2px solid #ccc;
+        box-shadow: 0px 0px 5px #000;
+        border-radius: 4px;
+        color: #000000;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 50px;
+        padding: 12px 20px;
+        width: 100%;
+        cursor: pointer;
+    }
+    .queArmar{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .queArmar img{
+        width: 40px;
+        height: 40px;
+    }
+    .queArmar img:hover{
+        cursor: pointer;
+        transform: scale(1.2);
+        transition: all 0.3s ease-in-out;
+    }
+    .img-hamburgesa{
+        width: 64px;
+        height: 64px;
+        object-fit: cover;
+    }
+    .confirmar{
+        background-color: #00ff2abd;
+        border: 2px solid #ccc;
+        box-shadow: 0px 0px 5px #000;
+        border-radius: 4px;
+
+    }}
+
+
+@media screen and (max-width: 400px){
+    .pedir{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 50px;
+        grid-row-gap: 30px;
+        }
+    .pedirComida{
+        background-color: #f2f2f2;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        color: #2f2f2f;
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 12px;
+        padding: 12px 20px;
+        width: 100%;
+        cursor: pointer;
+    }
+    .confirmar{
+        background-color: #00ff2abd;
+        border: 2px solid #ccc;
+        box-shadow: 0px 0px 5px #000;
+        border-radius: 4px;
+        color: #000000;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 50px;
+        padding: 12px 20px;
+        width: 100%;
+        cursor: pointer;
+    }
+    .queArmar{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .queArmar img{
+        width: 40px;
+        height: 40px;
+    }
+    .queArmar img:hover{
+        cursor: pointer;
+        transform: scale(1.2);
+        transition: all 0.3s ease-in-out;
+    }
+    .img-hamburgesa{
+        width: 64px;
+        height: 64px;
+        object-fit: cover;
+    }
+    .confirmar{
+        background-color: #00ff2abd;
+        border: 2px solid #ccc;
+        box-shadow: 0px 0px 5px #000;
+        border-radius: 4px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    
+    .pedir{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 50px;
+        grid-row-gap: 30px;
+        }
+    .pedirComida{
+        background-color: #f2f2f2;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        color: #2f2f2f;
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 12px;
+        padding: 12px 20px;
+        width: 100%;
+        cursor: pointer;
+    }
+    .confirmar{
+        background-color: #00ff2abd;
+        border: 2px solid #ccc;
+        box-shadow: 0px 0px 5px #000;
+        border-radius: 4px;
+        color: #000000;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 50px;
+        padding: 12px 20px;
+        width: 100%;
+        cursor: pointer;
+    }
+    .queArmar{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .queArmar img{
+        width: 40px;
+        height: 40px;
+    }
+    .queArmar img:hover{
+        cursor: pointer;
+        transform: scale(1.2);
+        transition: all 0.3s ease-in-out;
+    }
+    .img-hamburgesa{
+        width: 64px;
+        height: 64px;
+        object-fit: cover;
+    }
+    .confirmar{
+        background-color: #00ff2abd;
+        border: 2px solid #ccc;
+        box-shadow: 0px 0px 5px #000;
+        border-radius: 4px;
+    }
+}
+    
