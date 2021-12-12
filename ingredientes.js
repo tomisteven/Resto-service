@@ -16,4 +16,10 @@ const empanadas = {
     precios: [10, 20, 30, 40, 50, 60, 70, 80]
 }
 
-export { hamburguesa, pizza, empanadas }
+const postres = {
+    nombre: 'Postres',
+    ingredientes: ['Barra Chocolate', 'Torta Chocolate', 'Dona', 'Torta Frutilla', 'Galletas', 'Helado', "Lemon pie", "Muffin"],
+    precios: [10, 20, 30, 40, 50, 60, 70, 80]
+}
+
+export { hamburguesa, pizza, empanadas, postres }

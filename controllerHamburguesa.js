@@ -31,12 +31,9 @@ export function HamburguesaController(){
         $pedirHamburguesa.forEach(el => {
             el.addEventListener('click', (e) => {
                 let TEXTO = el.getAttribute('data-producto');
-                console.log(
-                    TEXTO
-                );
-    
                 //agregar pedido a un array
-    
+                
+                
                 if (arrayPedido.includes(TEXTO)) {
     
                     console.log('si esta');
@@ -50,6 +47,9 @@ export function HamburguesaController(){
                     $pedido.appendChild($li);
     
                 } else {
+                    
+                    
+                    
                     console.log('no esta');
                     arrayPedido.push(TEXTO);
                     let li = document.createElement('li');

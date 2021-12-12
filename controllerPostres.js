@@ -1,20 +1,20 @@
-import { Empanadas } from "./empanadas.js";
+import { Postres } from "./postres.js";
 
-export function empanadasController(){
+export function postresControllers(){
     let $total = document.createElement("h2")
 
-    const $hamburguesa = document.getElementById('empanadas').addEventListener('click', () => {
-        swal("Empanadas!", "Ahora solo tenes que elegir tus Sabores", "success");
+    const $hamburguesa = document.getElementById('postres').addEventListener('click', () => {
+        swal("Mmm postres!", "Ahora solo tenes que elegir tus favoritos", "success");
     
         
         const $pedir = document.getElementById('pedir');
         const $banner = document.getElementById('banner');
         
-        $banner.innerText = "Arma tu docena de empanadas a gusto...";
+        $banner.innerText = "Pedi tus postres favoritos...";
        
     
         $pedir.innerHTML = ""
-        $pedir.innerHTML = Empanadas()
+        $pedir.innerHTML = Postres()
     
     
     
