@@ -1,18 +1,18 @@
 import {
     empanadasController
-} from "./controllerEmpanadas.js";
+} from "./controllers/controllerEmpanadas.js";
 import {
     HamburguesaController
-} from "./controllerHamburguesa.js";
+} from "./controllers/controllerHamburguesa.js";
 import {
     controllerPizza
-} from "./controllerPizza.js";
+} from "./controllers/controllerPizza.js";
 import {
     pedidoPrincipal
-} from "./pedidoPrincipal.js";
+} from "./controllers/pedidoPrincipal.js";
 import {
     postresControllers
-} from "./controllerPostres.js";
+} from "./controllers/controllerPostres.js";
 
 
 // Inicializamos el controlador de pedido general

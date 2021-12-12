@@ -1,24 +1,25 @@
-import { Pizza } from "./pizza.js";
+import { Postres } from "../postres.js";
 
-
-export function controllerPizza(){
+export function postresControllers(){
     let $total = document.createElement("h2")
-    const $pizza = document.getElementById('pizza').addEventListener('click', () => {
-        swal("Pizza!", "Ahora solo tenes que elegir tus condimentos para completar tus pizzas!!", "success");
-        
+
+    const $hamburguesa = document.getElementById('postres').addEventListener('click', () => {
+        swal("Mmm postres!", "Ahora solo tenes que elegir tus favoritos", "success");
+    
         
         const $pedir = document.getElementById('pedir');
         const $banner = document.getElementById('banner');
         
-        $banner.innerText = "Pedi tus Pizzas a Gusto...";
-        
+        $banner.innerText = "Pedi tus postres favoritos...";
+       
     
         $pedir.innerHTML = ""
-        $pedir.innerHTML = Pizza()
+        $pedir.innerHTML = Postres()
     
     
     
-       
+        //***************************************************************************************** */
+        //seccion hamburguesa 
         let precioPedido = []; //array para guardar los precios de los pedidos
         let arrayPedido = []; //array de pedidos
         let array = [] //array para verificar si el pedido esta repetido
@@ -76,7 +77,7 @@ export function controllerPizza(){
                 const $confirmar = document.getElementById('confirmar').addEventListener('click', function () {
                     let unico = paraconfirmar.filter((item, index) => paraconfirmar.indexOf(item) === index);
                     //console.log(paraconfirmar);
-                    swal("Pedido Realizado", `${unico.join(", ")}`, "success");
+                    swal("Pedido Realizado", `${unico.join(", ")} `+ "Son " + "$" +total, "success");
                     
     
                     //limpiar array
@@ -91,5 +92,10 @@ export function controllerPizza(){
     
             })
         })
+    
+    
+    
+    
+    
     })
 }

@@ -1,20 +1,22 @@
-import { Postres } from "./postres.js";
+import {
+    Hamburguesa
+} from "../hamburguesa.js";
 
-export function postresControllers(){
+export function HamburguesaController(){
     let $total = document.createElement("h2")
 
-    const $hamburguesa = document.getElementById('postres').addEventListener('click', () => {
-        swal("Mmm postres!", "Ahora solo tenes que elegir tus favoritos", "success");
-    
+    const $hamburguesa = document.getElementById('hamburguesa').addEventListener('click', () => {
+        swal("Hamburguesa!", "Ahora solo tenes que elegir tus condimentos para completarla", "success");
+        
         
         const $pedir = document.getElementById('pedir');
         const $banner = document.getElementById('banner');
         
-        $banner.innerText = "Pedi tus postres favoritos...";
-       
+        $banner.innerText = "Arma tu Hamburguesa a Gusto...";
+        
     
         $pedir.innerHTML = ""
-        $pedir.innerHTML = Postres()
+        $pedir.innerHTML = Hamburguesa()
     
     
     
@@ -29,12 +31,9 @@ export function postresControllers(){
         $pedirHamburguesa.forEach(el => {
             el.addEventListener('click', (e) => {
                 let TEXTO = el.getAttribute('data-producto');
-                console.log(
-                    TEXTO
-                );
-    
                 //agregar pedido a un array
-    
+                
+                
                 if (arrayPedido.includes(TEXTO)) {
     
                     console.log('si esta');
@@ -48,6 +47,9 @@ export function postresControllers(){
                     $pedido.appendChild($li);
     
                 } else {
+                    
+                    
+                    
                     console.log('no esta');
                     arrayPedido.push(TEXTO);
                     let li = document.createElement('li');

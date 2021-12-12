@@ -1,25 +1,24 @@
-import { Empanadas } from "./empanadas.js";
+import { Pizza } from "././models/pizza.js";
 
-export function empanadasController(){
+
+export function controllerPizza(){
     let $total = document.createElement("h2")
-
-    const $hamburguesa = document.getElementById('empanadas').addEventListener('click', () => {
-        swal("Empanadas!", "Ahora solo tenes que elegir tus Sabores", "success");
-    
+    const $pizza = document.getElementById('pizza').addEventListener('click', () => {
+        swal("Pizza!", "Ahora solo tenes que elegir tus condimentos para completar tus pizzas!!", "success");
+        
         
         const $pedir = document.getElementById('pedir');
         const $banner = document.getElementById('banner');
         
-        $banner.innerText = "Arma tu docena de empanadas a gusto...";
-       
+        $banner.innerText = "Pedi tus Pizzas a Gusto...";
+        
     
         $pedir.innerHTML = ""
-        $pedir.innerHTML = Empanadas()
+        $pedir.innerHTML = Pizza()
     
     
     
-        //***************************************************************************************** */
-        //seccion hamburguesa 
+       
         let precioPedido = []; //array para guardar los precios de los pedidos
         let arrayPedido = []; //array de pedidos
         let array = [] //array para verificar si el pedido esta repetido
@@ -77,7 +76,7 @@ export function empanadasController(){
                 const $confirmar = document.getElementById('confirmar').addEventListener('click', function () {
                     let unico = paraconfirmar.filter((item, index) => paraconfirmar.indexOf(item) === index);
                     //console.log(paraconfirmar);
-                    swal("Pedido Realizado", `${unico.join(", ")} `+ "Son " + "$" +total, "success");
+                    swal("Pedido Realizado", `${unico.join(", ")}`, "success");
                     
     
                     //limpiar array
@@ -92,10 +91,5 @@ export function empanadasController(){
     
             })
         })
-    
-    
-    
-    
-    
     })
 }
