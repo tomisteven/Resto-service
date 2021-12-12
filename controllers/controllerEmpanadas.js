@@ -1,4 +1,4 @@
-import { Empanadas } from "../empanadas.js";
+import { Empanadas } from "../models/empanadas.js";
 
 export function empanadasController(){
     let $total = document.createElement("h2")

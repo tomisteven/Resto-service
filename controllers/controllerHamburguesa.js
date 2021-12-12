@@ -1,6 +1,6 @@
 import {
     Hamburguesa
-} from "../hamburguesa.js";
+} from "../models/hamburguesa.js";
 
 export function HamburguesaController(){
     let $total = document.createElement("h2")

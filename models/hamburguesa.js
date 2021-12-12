@@ -1,4 +1,4 @@
-import { hamburguesa } from "./ingredientes.js"
+import { hamburguesa } from "../ingredientes.js";
 
 
 export function Hamburguesa() {

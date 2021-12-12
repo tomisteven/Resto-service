@@ -1,4 +1,4 @@
-import { Postres } from "../postres.js";
+import { Postres } from "../models/postres.js";
 
 export function postresControllers(){
     let $total = document.createElement("h2")

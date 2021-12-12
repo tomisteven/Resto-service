@@ -1,4 +1,4 @@
-import { pizza } from "./ingredientes.js"
+import { pizza } from "../ingredientes.js"
 
 
 export function Pizza() {

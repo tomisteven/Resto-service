@@ -1,4 +1,4 @@
-import { Pizza } from "././models/pizza.js";
+import { Pizza } from "../models/pizza.js";
 
 
 export function controllerPizza(){
